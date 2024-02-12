@@ -1,0 +1,36 @@
+{%- extends "templates/web.html" -%}
+{%- block content -%}
+{%- endblock-%}
+{%- block header -%}
+<h1>Library</h1>
+{%- endblock-%}
+
+{%- block body -%}
+
+<div class="row">
+{%-for article in articles-%}
+<div class="col">
+    <div class="card">
+        <div class="card-body">
+            <p class="card-text">
+                {{ article.name }}
+            </p>
+            <a href="/article/{{ article.name }}">Open Article</a>
+        </div>
+    </div>
+</div>
+{%endfor%}
+<button class="button btn-primary btn-send" id="btn" >{{ _("Send") }}</button>
+
+</div>
+<!-- {{web_block('Article', values={'order_by': 'creation'}) }} -->
+{%- endblock-%}
+
+{%- block script-%}
+
+
+{{include_script('library_dashboard.bundle.js')}}
+{{include_script('library.js')}}
+{{include_style('library_dashboard.bundle.css')}}
+{%- endblock-%}
+

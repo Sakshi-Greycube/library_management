@@ -1,0 +1,10 @@
+{%- extends "templates/web.html" -%}
+{%- block content -%}
+<h1>hi</h1>
+<button onclick="trybutton_function()">click me</button>
+{%- endblock-%}
+
+{%- block script-%}
+{{include_script('try.js')}}
+{{include_script('library_dashboard.bundle.js')}}
+{%- endblock-%}

@@ -14,7 +14,17 @@ app_license = "MIT"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/library_management/css/library_management.css"
-# web_include_js = "/assets/library_management/js/library_management.js"
+# web_include_js = ["party.bundle.js"]
+
+# web_include_js = [
+#     'test.bundle.js'
+# ]
+
+# web_include_css = [
+#     'library_dashboard.bundle.css'
+# ]
+
+extend_bootinfo = 'library_management.extend.boot_session'
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "library_management/public/scss/website"
@@ -116,21 +126,32 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"ToDo": {
+		"on_update": "library_management.extend.todo_update",
+	}
+}
+
+override_doctype_class = {
+    "ToDo": "library_management.extend.CustomToDo"
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"library_management.tasks.all"
-# 	],
+scheduler_events = {
+
+	"cron": {
+		"*/5 * * * *": [
+            "library_management.task.changedate"
+			# "library_management.task.scheduler",
+            # "library_management.task.cron"
+		]
+	},
+	"all": [
+		# "library_management.task.scheduler",
+        # "library_management.task.changedate"
+	],
 # 	"daily": [
 # 		"library_management.tasks.daily"
 # 	],
@@ -143,7 +164,7 @@ app_license = "MIT"
 # 	"monthly": [
 # 		"library_management.tasks.monthly"
 # 	],
-# }
+ }
 
 # Testing
 # -------
@@ -154,7 +175,7 @@ app_license = "MIT"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "library_management.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "library_management.extend.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
@@ -213,3 +234,9 @@ app_license = "MIT"
 # auth_hooks = [
 # 	"library_management.auth.validate"
 # ]
+
+website_route_rules = [
+    {"from_route": "/article/<article_name>", "to_route":"article"}
+]
+
+library_hook = 'test'

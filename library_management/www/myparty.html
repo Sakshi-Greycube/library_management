@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>hi</h1>
+<h2>{{name}}</h2>
+<h3>{{msg}}</h3>
+<button class="button btn-primary btn-send" id="btn" onclick="myFunction(this)">{{ _("Send") }}</button>
+
+<script> 
+//Methods-4
+
+// function myFunction(mybtn){
+//     frappe.party.confetti(mybtn);
+// }
+
+// frappe.ready(function () {
+//     document.querySelector(".button").addEventListener("click", function (e) {
+//         console.log("Clicked!!");
+//         frappe.party.confetti(this);
+//     });
+//     })
+
+</script>
+{% endblock %}
+
+{%- block script-%}
+{{include_script('myparty.js')}}
+{{include_script('party.bundle.js')}}
+{% endblock %}

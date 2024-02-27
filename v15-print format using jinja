@@ -1,0 +1,37 @@
+manage custom data:
+
+{% set gl = frappe.get_list('GL Entry',filters={'voucher_type': 'Purchase Invoice', 'voucher_no': doc.name},fields=['account', 'party_type', 'party', 'debit', 'credit', 'remarks']) %}
+{% set send_to_jinja = {"gl": gl , 
+"table_start":"<table class='table table-bordered'>", "table_end":"</table>",
+"tr_start":"<tr>", "tr_end":"</tr>",
+"th_start":"<th>", "th_end":"</th>",
+"td_start":"<td>", "td_end":"</td>",} %}  
+
+
+text:
+
+{{table_start}}
+            {{tr_start}}
+                {{th_start}}SL{{th_end}}
+                {{th_start}}Account{{th_end}}
+                {{th_start}}Party Type{{th_end}}
+                {{th_start}}Party{{th_end}}
+                {{th_start}}Debit Amount{{th_end}}
+                {{th_start}}Credit Amount{{th_end}}
+            {{tr_end}}
+            {% for entries in gl %}
+            {{tr_start}}
+                {{td_start}}{{ loop.index }}{{td_end}}
+                {{td_start}}{{ entries.account }}{{td_end}}
+                {{td_start}}{{ entries.party_type or '' }}{{td_end}}
+                {{td_start}}{{ entries.party }}{{td_end}}
+                {{td_start}}{{ entries.debit }}{{td_end}}
+                {{td_start}}{{ entries.credit }}{{td_end}}
+            {{tr_end}}
+            {% endfor %}
+            {{tr_start}}
+                {{td_start}}Total{{td_end}}
+                {{td_start}}{{ doc.grand_total }}{{td_end}}
+                {{td_start}}{{ doc.grand_total }}{{td_end}}
+            {{tr_end}}
+       {{table_end}}

@@ -141,17 +141,17 @@ override_doctype_class = {
 
 scheduler_events = {
 
-	"cron": {
-		"*/5 * * * *": [
-            "library_management.task.changedate"
-			# "library_management.task.scheduler",
-            # "library_management.task.cron"
-		]
-	},
-	"all": [
-		# "library_management.task.scheduler",
-        # "library_management.task.changedate"
-	],
+	# "cron": {
+	# 	"*/5 * * * *": [
+    #         "library_management.task.changedate"
+	# 		# "library_management.task.scheduler",
+    #         # "library_management.task.cron"
+	# 	]
+	# },
+	# "all": [
+	# 	# "library_management.task.scheduler",
+    #     # "library_management.task.changedate"
+	# ],
 # 	"daily": [
 # 		"library_management.tasks.daily"
 # 	],

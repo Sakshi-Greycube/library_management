@@ -8,6 +8,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "image",
   "first_name",
   "last_name",
   "full_name",
@@ -58,11 +59,18 @@
    "fieldname": "age",
    "fieldtype": "Int",
    "label": "Age"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image"
   }
  ],
+ "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-26 14:51:29.628800",
+ "modified": "2024-03-15 15:23:55.622448",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",

@@ -217,6 +217,9 @@ def get_report_summary(data):
 		my_list.append({'label': a.article,
 				 	'value': a.count,
 					'indicator': 'Green'})
+	my_list.append({'label': "Name",
+				 	'value': 'Abc',
+					'indicator': 'Green'})
 	return my_list
 
 

@@ -38,6 +38,7 @@ frappe.ui.form.on('Library Member', {
 					// frappe.validated = false;
 					return;
 				})
+				frappe.validated = false;
 }
 
 	},

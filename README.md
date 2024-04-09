@@ -16,8 +16,8 @@ MIT
 & winner of the [Best Partner Award](https://frappe.io/partners/india/greycube-technologies) <img src="https://github.com/Sakshi-Greycube/library_management/assets/155966160/df8319b5-a40e-4156-a9ae-9b1d64b32f48" width="25" height="25"><br>
 <h5>
 <img src="https://greycube.in/files/link.svg" width="20" height="auto"><a href="https://greycube.in"> GreyCube.in</a><br>
-<img src="https://greycube.in/files/8665305_envelope_email_icon.svg" width="20" height="18"><a href="hsales@greycube.in"> 
- mailto:sales@greycube.in</a><br>
+<img src="https://greycube.in/files/8665305_envelope_email_icon.svg" width="20" height="18"><a href="mailto:sales@greycube.in"> 
+ hsales@greycube.in</a><br>
 <img src="https://greycube.in/files/linkedin1.svg" width="20" height="18"> <a href="https://www.linkedin.com/company/greycube-technologies"> LinkedIn</a><br>
 <img src="https://greycube.in/files/blog.svg" width="20" height="18"> <a href="https://greycube.in/blog"> Blogs</a></h5>
 

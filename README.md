@@ -19,6 +19,6 @@ MIT
 <img src="https://greycube.in/files/8665305_envelope_email_icon.svg" width="20" height="18"><a href="mailto:sales@greycube.in"> 
  hsales@greycube.in</a><br>
 <img src="https://greycube.in/files/linkedin1.svg" width="20" height="18"> <a href="https://www.linkedin.com/company/greycube-technologies"> LinkedIn</a><br>
-<img src="https://greycube.in/files/blog.svg" width="20" height="18"> <a href="https://greycube.in/blog" target="_blank"> Blogs</a></h5>
+<img src="https://greycube.in/files/blog.svg" width="20" height="18"> <a href="https://greycube.in/blog"> Blogs</a></h5>
 
 

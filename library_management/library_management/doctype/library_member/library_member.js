@@ -13,7 +13,7 @@ frappe.ui.form.on('Library Member', {
 			return;		
 
 		}
-        frappe.validated = false;
+        // frappe.validated = false;
 		const d = new Date(frm.doc.date_of_birth);
 		let year = d.getFullYear();
 		console.log(year)
@@ -38,7 +38,7 @@ frappe.ui.form.on('Library Member', {
 					// frappe.validated = false;
 					return;
 				})
-				frappe.validated = false;
+				frappe.validated = false
 }
 
 	},

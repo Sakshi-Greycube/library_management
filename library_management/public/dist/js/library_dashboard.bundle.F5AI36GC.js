@@ -346,5 +346,9 @@
   frappe.jsConfetti = jsConfetti;
   console.log("inside js confetti main library");
   console.log("jsConfetti", jsConfetti);
+  jsConfetti.addConfetti({
+    confettiRadius: 4,
+    confettiNumber: 1e3
+  });
 })();
-//# sourceMappingURL=library_dashboard.bundle.OQEZGMYY.js.map
+//# sourceMappingURL=library_dashboard.bundle.F5AI36GC.js.map

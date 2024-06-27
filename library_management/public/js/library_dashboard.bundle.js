@@ -19,10 +19,10 @@ console.log('jsConfetti',jsConfetti)
 //     ],
 //   })
 
-// jsConfetti.addConfetti({
-//     confettiRadius: 6,
-//     confettiNumber: 1000, 
-//   }) 
+jsConfetti.addConfetti({
+    confettiRadius: 4,
+    confettiNumber: 1000, 
+  }) 
 
 // jsConfetti.addConfetti({
 //     emojis: ['🌸'],

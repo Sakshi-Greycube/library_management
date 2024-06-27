@@ -17,7 +17,7 @@ app_license = "MIT"
 # web_include_js = ["party.bundle.js"]
 
 # web_include_js = [
-#     'test.bundle.js'
+#     'library_dashboard.bundle.js'
 # ]
 
 # web_include_css = [

@@ -23,6 +23,8 @@ frappe.ui.form.on('Article', {
 				console.log(r);
 			})
 		})
+
+		// frm.add_web_link('https://www.google.co.in/', 'Go To Google')
 	}
 });
 

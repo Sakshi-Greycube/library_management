@@ -1,0 +1,48 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<form id="article">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="">Name</label>
+            <input type="text" class="form-control" placeholder="Name" name="name" required>
+          </div>
+      <div class="col-md-6">
+        <label for="">Article Name</label>
+        <input type="text" class="form-control" placeholder="Article" name="article_name" required>
+      </div>
+      <div class="col-md-6">
+        <label for="">ISBN</label>
+        <input type="text" class="form-control" placeholder="ISBN" name="isbn" required>
+      </div>
+      <div class="col-md-6">
+        <label for="">Status</label><br>
+        <select class="form-control">
+            <option>status</option>
+            <option>Availabel</option>
+            <option>Issue</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="">Author</label>
+        <input type="text" class="form-control" placeholder="Author" name="author" required>
+      </div>
+      <div class="col-md-6">
+        <label for="">Description</label>
+        <input type="text" class="form-control" placeholder="Description" name="description" required>
+      </div>
+      <div class="col-md-6">
+        <label for="">Image</label>
+        <input type="file" class="form-control" placeholder="Photo" name="photo" accept="image/*" id="image" required>
+      </div>
+      <div class="col-md-6"><br>
+        <button type="submit" class="btn btn-primary float-right">Submit</button>
+      </div>
+      <!-- <div class="col-md-6"><br>
+        <button type="button" name="button" class="float-left btn btn-primary" onclick="makecall()">Click</button>
+      </div> -->
+    </div>
+  </form>
+  {% endblock %}
+
+  

@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "prompt",
  "creation": "2024-01-24 17:09:11.078330",
@@ -11,6 +12,7 @@
   "article_name",
   "image",
   "author",
+  "disabled",
   "column_break_ssrug",
   "isbn",
   "status",
@@ -78,6 +80,12 @@
   },
   {
    "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "0",
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "Published"
@@ -93,7 +101,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-08 15:12:13.549407",
+ "modified": "2024-04-19 14:46:15.504627",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",

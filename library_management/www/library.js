@@ -1,7 +1,5 @@
-// import JSConfetti from 'js-confetti'
-
-console.log('i am inside library.js')
-
+import JSConfetti from 'js-confetti'
+const jsConfetti = new JSConfetti()
 
 jsConfetti.addConfetti()
 
